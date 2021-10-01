@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Mi primer formulario</h1>
+    <img src="" alt="">
+    <!-- La etiqueta form sirve para formularios
+    accion-es el lugar adonde va la informacion de mi formulario
+    method el protocolo por el que viaja los datos 
+    post oculta datos sensibles y get no-->
+    <form action="registro.com" method="POST">
+        <!-- para poder poner una nombre al formulario se usa fielset y legend -->
+        <fieldset>
+            <legend>Titulo de mi formulario</legend>
+            <!-- hagamos un formulario de inicio de sesion -->
+            <!-- correo contraseña y boton de envio de datos -->
+            <!-- required hace obligatorio la entrada de datos -->
+            <!-- autocomplete off permite  no mostrar nombres-->
+            <input type="email" placeholder="correo electronico"  name="email" required autocomplete="off">
+            <br><br>
+            <input type="password" placeholder="contraseña" name="password" required>
+            <br><br>
+            <button type="submit">Ingresar</button>
+            <br>
+        </fieldset>
+    </form>
+    <h1>Formulario de registro</h1>
+    <form action="" method="GET">
+        <fieldset>
+            <legend>Ingrese datos</legend>
+            <label for="Nombre">Nombres: </label>
+            <!-- autofocus permite poner el marcador por default  -->
+            <!-- value asigna un valor predeterminado -->
+            <!-- readonly hace que el valor sea determinado y no se pueda cambiar -->
+            <input type="text" placeholder="Nombres"  name="name" id="Nombre" autofocus
+            autocomplete="new-password" value="leonel" readonly>
+            <br><br>
+            <label for="Apellido">Apellidos : </label>
+            <input type="text" placeholder="Apellidos"  name="lastname" id="Apellido" >
+            <br><br>
+            <label for="Nacimiento">Fecha de nacimiento: </label>
+            <!-- min año-mes-dia fecha minima max año-mes-dia fecha maxima -->
+            <input type="date" name="birth" id="Nacimiento" min="2000-01-01" max="2021-12-31">
+            <br><br>
+            <label for="correo">Ingrese correo</label>
+            <input type="email" placeholder="Correo Electronico"  name="email" id="correo" required>
+            <br><br>
+            <label for="contraseña">Ingrese contraseña</label>
+            <input type="password" placeholder="Contraseña" name="password" id="contraseña" required>
+            <br><br>
+            <label for="celular">Numero de celular</label>
+            <!-- maxlength bloquea los caracteres a 9 digitos -->
+            <input type="tel" placeholder="Numero de celular"  name="phone" id="celular" maxlength="9">
+            <br><br>
+            <label for="pais">Pais</label>
+            <select name="country" id="pais">
+                <!-- disable permite no escoger esta opcion -->
+                <!-- selected permite ponerla por default -->
+                <option value="" disabled selected>Seleccione su pais</option>
+                <option value="Peru">Peru</option>
+                <option value="Chile">Chile</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Argentina">Argentina</option>
+            </select>
+            <br><br>
+            <label for="terminos">Acepta terminos y condiciones?
+                <input type="checkbox" required id="terminos" name="agrements">
+            </label>
+            <br><br>
+            <label for="plan1">Plan 30
+                <input type="radio" id="plan1" name="plan">
+            </label>
+            <label for="plan2">Plan 65
+                <input type="radio" id="plan2" name="plan">
+            </label>
+            <label for="plan3">Plan 90
+                <!-- checked permite por default una opcion -->
+                <input checked type="radio" id="plan3" name="plan">
+            </label>
+            <br><br>
+            <!-- textarea permite agregar comentarios largos -->
+            <label for="comentarios">Agrege un comentario:</label><br>
+            <textarea name="about" id="comentarios" 
+            cols="30" 
+            rows="10" placeholder="Comentarios"     
+            maxlength="140"
+            minlength="30">
+            </textarea>
+            <br><br>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
