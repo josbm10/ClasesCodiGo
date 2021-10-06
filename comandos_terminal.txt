@@ -1,0 +1,20 @@
+git bash
+.. para regresar de carpeta
+
+pwd saber donde estamos
+cd dirigirnos a carpetas ..retroceder 
+code . abrir vscode
+mkdir <nombre carpeta>/<nombre carpeta2> <nombre carpeta>/<nombre carpeta2> <nombre carpeta>/<nombre carpeta2> 
+crear carpetas
+touch <nombre carpeta>/<nombre archivo html> crear archivos
+cp <archivo.html> <nombre carpeta>/<archivo nuevo.html> copiar archivos a otros
+rm <carpeta>/<archivos> remover archivos
+rm -dr <nombre carpeta> remueve carpetas y su contenido
+mv <archivo> <nueva ruta>
+ls listar
+
+modificar mediante terminal
+vim <archivo.html>
+esc + i modificar archico
+esc + : + x guardar cambio
+esc + :q! no guardar cambios
