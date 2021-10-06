@@ -46,10 +46,13 @@ para salir de VIM
 git diff <token1> <token2>
 
 //para regresar una version anterior
-git reset <token1> <--hard o´ --soft>
+git reset <--hard o´ --soft> <token1> sin hard mantiene los cambios del archivo 
 
 //agregar origen remoto
 git remote add origin https://github.com/josbm10/PrimerSitio.git
+
+//ver el origen que tiene
+git remote uv
 
 //muestra las ramas que tengo
 git branch
@@ -62,4 +65,13 @@ git push -u origin <nombre rama>  (-u opcional)
 git pull -u origin <nombre rama> 
 
 //hacer copia
-git clone
+git clone <url del repositorio remoto(github)>
+
+//crear una rama
+git checkout -b "nombre rama" (ejm: feature/servicios)
+
+//ver ramas que tengo
+git branch -a
+
+//cambiar de rama
+git checkout <nombre de la otra rama>
