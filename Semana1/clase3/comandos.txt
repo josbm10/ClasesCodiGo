@@ -65,7 +65,7 @@ git push -u origin <nombre rama>  (-u opcional)
 git pull -u origin <nombre rama> 
 
 //hacer copia
-git clone <url del repositorio remoto(github)>
+git clone <url del repositorio remoto(github)> <nuevo nobre que le daras opcional>
 
 //crear una rama
 git checkout -b "nombre rama" (ejm: feature/servicios)
@@ -75,3 +75,9 @@ git branch -a
 
 //cambiar de rama
 git checkout <nombre de la otra rama>
+
+//actualizar mis ramas
+git french -- prune 
+
+//eliminar la rama
+git branch-d <nombre de rama>
