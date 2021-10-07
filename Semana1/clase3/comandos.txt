@@ -80,6 +80,6 @@ git checkout <nombre de la otra rama>
 git fetch --prune 
 
 //eliminar la rama
-git branch-d <nombre de rama>
+git branch-D <nombre de rama>
 //eliminar rama remota
 git push origin --delete <nombre rama>
