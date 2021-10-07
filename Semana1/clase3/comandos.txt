@@ -77,7 +77,9 @@ git branch -a
 git checkout <nombre de la otra rama>
 
 //actualizar mis ramas
-git french -- prune 
+git fetch --prune 
 
 //eliminar la rama
 git branch-d <nombre de rama>
+//eliminar rama remota
+git push origin --delete <nombre rama>
