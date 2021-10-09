@@ -47,8 +47,9 @@ header #logo {
   margin-bottom: 20px;
 }
 .home p {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
+}
+.home img{margin: 20px;}
 /* servicios--------------------------------------- */
 .servicios {
   margin: 20px;
@@ -57,6 +58,10 @@ header #logo {
   color: #d206b2;
   margin-bottom: 20px;
 }
+.servicios ul {
+    margin-top: 20px;
+}
+.servicios img{margin: 20px;}
 #servicios-l1 {
   color: rgb(218, 36, 36);
 }
@@ -77,6 +82,10 @@ header #logo {
   color: #aad206;
   margin-bottom: 20px;
 }
+.portafolio ul {
+  margin-top: 20px;
+}
+.portafolio img{margin: 20px;}
 #portafolio-l1 {
   color: rgb(114, 143, 8);
 }
@@ -98,9 +107,12 @@ header #logo {
   color: #06d2c6;
   margin-bottom: 20px;
 }
-.form{display: flex;
+.contacto   form {
+    display: flex;
     flex-direction: column;
-    justify-content: space-around;}
+    align-items: flex-start;
+    justify-content: space-between;
+}
 
 /* footer --------------------------------------------*/
 footer {
