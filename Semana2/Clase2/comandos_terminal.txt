@@ -18,3 +18,6 @@ vim <archivo.html>
 esc + i modificar archico
 esc + : + x guardar cambio
 esc + :q! no guardar cambios
+ 
+eliminar repositorio remoto
+direccion donde se hace git+ rm -rf .git

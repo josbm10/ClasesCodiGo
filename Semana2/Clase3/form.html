@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        div {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(226, 143, 19);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: teal;}
+    </style>
+</head>
+
+<body>
+    <form method="GET" action="">
+        <div>
+            <!-- disable no envia value readonly si -->
+            <label for="nombre">nombre</label>
+            <input type="text" placeholder="nombre" name="name" value="leon" id="nombre" disabled minlength="6"
+                required>
+        </div>
+        <hr>
+        <div>
+            <label for="correo">correo</label>
+            <input type="email" placeholder="correo" name="email" value="josh@hto.com" id="correo" readonly>
+        </div>
+        <hr>
+        <div>
+            <label for="edad">edad</label>
+            <input type="number" placeholder="edad" name="age" value="chavez" id="edad" min="18" max="30">
+        </div>
+        <hr>
+        <div>
+            <label for="cumpleaños">cumpleaños</label>
+            <input type="date" name="birthday" id="cumpleaños">
+        </div>
+        <hr>
+        <div>
+            <label for="color">color</label>
+            <input type="color" name="color" id="color">
+        </div>
+        <hr>
+        <div>
+            <label for="contraseña">contraseña</label>
+            <input type="password" name="password" id="contraseña">
+        </div>
+        <hr>
+        <div>
+            <label for="numero">numero</label>
+            <input type="range" name="number" id="numero">
+        </div>
+        <hr>
+        <div>
+            <h2>hobies</h2>
+            <label for="futbol">futbol</label>
+            <input type="radio" name="hobbie" id="futbol" value="futbol">
+            <label for="voley">voley</label>
+            <input type="radio" name="hobbie" id="voley" value="voley">
+        </div>
+        <hr>
+        <div>
+            <h2>sexo</h2>
+            <label for="masculino">masculino</label>
+            <input type="radio" name="sexo" id="masculino" value="m">
+            <label for="femenino">femenino</label>
+            <input type="radio" name="sexo" id="femenino" value="f">
+        </div>
+        <hr>
+        <div>
+            <h2>pais</h2>
+            <label for="pais"></label>
+            <select name="country" required>
+                <option value="">eliga su pais</option>
+                <option value="peru">peru</option>
+                <option value="chile">chile</option>
+                <option value="eeuu">eeuu</option>
+                <option value="brasil">brasil</option>
+            </select>
+        </div>
+        <hr>
+        <button type="submit">subir</button>
+    </form>
+</body>
+
+</html>
