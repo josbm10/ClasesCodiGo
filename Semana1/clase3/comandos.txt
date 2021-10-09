@@ -59,7 +59,7 @@ git branch
 git branch <nombre rama>
 
 //hacer un push
-git push -u origin <nombre rama>  (-u opcional)
+git push -u origin <nombre rama actual>  (-u opcional)
 
 //hacer pull
 git pull -u origin <nombre rama> 
