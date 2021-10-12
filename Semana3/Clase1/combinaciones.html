@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        /* para el primer hijo surgido */
+        ul>li {
+            border-top: 5px solid red;
+        }
+    </style>
+    <ul>
+        <li>1</li>
+        <li>2
+            <ol>
+                <li>1</li>
+                <li>2</li>
+            </ol>
+        </li>
+    </ul>
+    <style>
+        /* + para el primer elemento p despues de h2 */
+        h2+p {
+            color: red;
+        }
+    </style>
+    <h2>hola</h2>
+    <p>lorem</p>
+    <p>lorem</p>
+    <hr>
+    <h2>hola</h2>
+    <p>lorem</p>
+    <p>lorem</p>
+
+    <style>
+        /* ~ todos los elementos p despues de h3 */
+        h3~p{
+           background-color: green;
+        }
+    </style>
+    <h3>hola</h3>
+    <p>a1</p>
+    <p>a2</p>
+    <p>a3</p>
+    <hr>
+    <h3>hola</h3>
+    <p>a1</p>
+    <p>a2</p>
+    <p>a3</p>
+
+    <style>
+        h4,p,blockquote,ul{color: hotpink;
+        padding: 20px;}
+    </style>
+    <h4>hola</h4>
+    <p>hola</p>
+    <blockquote>hola</blockquote>
+
+</body>
+
+</html>
