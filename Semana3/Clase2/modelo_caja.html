@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* box sizing para no tener que calcular los espacios del pading y border */
+        * {
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            max-width: 800px;
+            /* backgroun:url(img) color posicion repeat o no-repeat*/
+            background: url(./image/startransparent.gif) red 20% 20% no-repeat;
+            /* border:width style color */
+            border: 10px solid yellow;
+            border-width: 10px;
+            border-style: solid;
+            border-color: yellow;
+            /* padding:20px 20px 20px top-lados-botton */
+            padding: 20px;
+            /* margin:top right botton left; */
+            /* margin:top lados botton(auto posiciona espacio central siempre contenda un ancho fijo y altura) */
+            margin: 0 auto 50px;
+            height: 400px;
+            /* si el contenido sobrepasa las dimenciones del contenedor scroll crea una barra para ver
+            hidden lo oculta*/
+            overflow: auto;
+            /* overflow-y barra en y x barra en x */
+        }
+
+        h1 {
+            text-align: left;
+            /* left,right,center,justify */
+            visibility: hidden;
+            /* visible,hidden para mostrar */
+        }
+
+        a {
+            display: block;
+            /* block,inline,none */
+        }
+
+        .inline span {
+            display: inline;
+            background: red;
+            margin: 30px;
+        }
+
+        .block span {
+            display: block;
+            background: red;
+            margin: 30px;
+        }
+
+        .inline-block span{
+            display: inline-block;
+            background: red;
+            margin: 30px;
+        }
+
+        /* DISPLAY inline crea un display en una linea,block crea una display en toda la linea
+        inline-block crea un bloque en un linea*/
+    </style>
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>titulo</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet deserunt tempore earum nobis esse,
+            praesentium fuga excepturi eaque fugiat blanditiis omnis debitis nihil corrupti dicta! Fugiat itaque sed
+            exercitationem porro?</p>
+        <div>
+            <h2>titulo</h2>
+            <p>lorem</p>
+            <a href="">hola</a>
+        </div>
+        <div>
+            <h2>titulo</h2>
+            <p>lorem</p>
+            <a href="">hola</a>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <h1>titulo</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet deserunt tempore earum nobis esse,
+            praesentium fuga excepturi eaque fugiat blanditiis omnis debitis nihil corrupti dicta! Fugiat itaque sed
+            exercitationem porro?</p>
+        <div>
+            <h2>titulo</h2>
+            <p>lorem</p>
+            <a href="">hola</a>
+        </div>
+        <div>
+            <h2>titulo</h2>
+            <p>lorem</p>
+            <a href="">hola</a>
+        </div>
+    </div>
+    <div class="inline">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.  <span> Est aut, laboriosam et sunt aliquid
+            recusandae
+            omnis ducimus commodi delectus autem. Veritatis </span>, quo perspiciatis adipisci itaque doloribus nobis
+            error nulla?</p>
+    </div>
+    <div class="block">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <span> Est aut, laboriosam et sunt aliquid
+                recusandae
+                omnis ducimus commodi delectus autem. Veritatis </span>Veritatis accusamus, quo perspiciatis adipisci
+            itaque doloribus nobis
+            error nulla?</p>
+    </div>
+    <div class="inline-block">
+        <p>Lorem ipsum dolor,sit amet consectetur adipisicing elit.<span>Est aut,laboriosam et sunt aliquid recusandae
+                omnis ducimus commodi delectus autem.</span> quo perspiciatis adipisci itaque doloribus nobis
+            error nulla?</p>
+    </div>
+</body>
+
+</html>

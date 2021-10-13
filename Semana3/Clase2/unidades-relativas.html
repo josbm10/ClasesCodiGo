@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            /* 64% de la configuracion del navegador 16px*/
+            font-size: 64%;
+            /* base 10 px*/
+        }
+
+        body {
+            /* 1.3 de la configuracion del html 10px para los parrafos */
+            font-size: 1.3rem;
+            /* base 13 px*/
+        }
+
+        h1 {
+            /* 3 de la configuracion del html 10px */
+            font-size: 3rem;
+            /* base 30px */
+        }
+
+        h1 span {
+            /* 0.5em hereda el tamaño del padre h1*/
+            font-size: 0.5em;
+        }
+
+        h2 {
+            /* 2.4 de la configuracion del htmlbody 10px */
+            font-size: 2.4rem;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+        }
+
+        h4 {
+            font-size: 1.6rem;
+        }
+
+        h5 {
+            font-size: 1.4rem;
+        }
+
+        .wrapper {
+            /* vh tamaño de la altura de pantalla del dispositivo */
+            /* vw tamaño de la ancho de pantalla del dispositivo */
+            height: 100vh;
+            width: 80vw;
+            background-color: skyblue;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Lorem ipsum dolor sit
+            <span>Lorem ipsum dolor sit</span>
+        </h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi fugit inventore nisi sapiente distinctio!
+            Suscipit
+            iusto distinctio possimus sapiente, quisquam debitis odio saepe, aliquam soluta ratione explicabo facere
+            rerum
+            ipsa.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perferendis, fugit minima harum eveniet
+            enim
+            voluptatum dolore, id non soluta obcaecati atque architecto cum ipsa nam qui maiores labore dignissimos?</p>
+        <h2>Lorem ipsum dolor sit</h2>
+        <h3>Lorem ipsum dolor sit</h3>
+        <h4>Lorem ipsum dolor sit</h4>
+        <h5>Lorem ipsum dolor sit</h5>
+    </div>
+    <style>
+        .box {
+            background-color: red;
+        }
+
+        .box div {
+            height: 100%;
+            width: 50%;
+            background: blue;
+        }
+    </style>
+    <div class="box">
+        caja
+        <div>caja dentro</div>
+    </div>
+</body>
+
+</html>
