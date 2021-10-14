@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: chocolate;
+            width: 400px;
+            height: 400px;
+            margin: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .box .box1,
+        .box .box2 {
+            position: absolute;
+            transition: all .5s ease;
+        }
+
+        .box1 {
+            left: 0;
+            top: 20px;
+            width: 50%;
+            background-color: yellow;
+        }
+
+        .box2 {
+            right: 0;
+            bottom: 20px;
+            width: 50%;
+            background-color: red;
+        }
+
+        .box:hover .box1 {
+            /* inherit hace que el valor top anterior desaparezca y se vuelva cero */
+            top: inherit;
+            bottom: 0;
+            background-color: red;
+        }
+
+        .box:hover .box2 {
+            top: 0;
+            bottom: inherit;
+            background-color: yellow;
+        }
+
+        header {
+            position: fixed;
+            left: 0;
+            top: 0;
+            background-color: pink;
+            width: 100%;
+            z-index: 1;
+            padding: 20px;
+        }
+
+        html {
+            height: 200%;
+        }
+
+        body {
+            padding-top: 140px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>titulo</h1>
+    </header>
+    <!-- position:absolute hace que el elemneto indicado salga del posicionamiento inicial y 
+        flote al lugar indicado tomando origin del elemento padre fijo-->
+    <!-- position:relative hace que el elemento tenga un posion fijo  -->
+</body>
+<div class="box">
+    <div class="box1">caja1</div>
+    <div class="box2">caja2</div>
+</div>
+<div class="box">
+    <div class="box1">caja1</div>
+    <div class="box2">caja2</div>
+</div>
+
+</html>

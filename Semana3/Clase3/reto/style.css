@@ -1,0 +1,163 @@
+
+.contenedor {
+  width: 900px;
+  height: 900px;
+  background-color: tomato;
+  position: relative;
+  text-align: center;
+}
+.titulo{
+    background-color: purple;
+    width: 30%;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.redes {
+    text-align: center;
+  background-color: purple;
+  width: 30%;
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.redes ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* robot-------------------------------------------------- */
+
+/* cabeza----------------------------- */
+
+.cabeza {
+  height: 200px;
+  width: 200px;
+  background-color: #c4c4c4;
+  position: absolute;
+  top: 50px;
+  right: 200px;
+}
+.cabeza .ojo_izq {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: red;
+  left: 30px;
+  top: 30px;
+}
+.cabeza .ojo_der {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: red;
+  right: 30px;
+  top: 30px;
+}
+.cabeza .boca {
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  background-color: red;
+  right: 50px;
+  bottom: 50px;
+}
+/* cuerpo---------------------- */
+.cuerpo {
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  background-color: red;
+  top: 250px;
+  right: 150px;
+}
+/* manos----------------------------------- */
+.cuerpo .mano_izq {
+  width: 200px;
+  height: 90px;
+  position: absolute;
+  background-color: #c4c4c4;
+  right: -100px;
+  top: 100px;
+}
+.cuerpo .mano_der {
+  width: 200px;
+  height: 90px;
+  position: absolute;
+  background-color: #c4c4c4;
+  left: -100px;
+  top: 100px;
+}
+/* dedos--------------------------- */
+.cuerpo .mano_izq .dedo1,
+.cuerpo .mano_izq .dedo2,
+.cuerpo .mano_izq .dedo3,
+.cuerpo .mano_der .dedo4,
+.cuerpo .mano_der .dedo5,
+.cuerpo .mano_der .dedo6 {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: yellow;
+}
+.cuerpo .mano_izq .dedo1 {
+  left: -10px;
+  top: 10px;
+}
+.cuerpo .mano_izq .dedo2 {
+  left: -10px;
+  top: 40px;
+}
+.cuerpo .mano_izq .dedo3 {
+  left: -10px;
+  top: 70px;
+}
+.cuerpo .mano_der .dedo4 {
+  right: -10px;
+  top: 10px;
+}
+.cuerpo .mano_der .dedo5 {
+  right: -10px;
+  top: 40px;
+}
+.cuerpo .mano_der .dedo6 {
+  right: -10px;
+  top: 70px;
+}
+/* piernas------------------------ */
+.cuerpo .pierna_izq {
+  width: 90px;
+  height: 200px;
+  position: absolute;
+  background-color: #c4c4c4;
+  bottom: -150px;
+  left: 30px;
+}
+.cuerpo .pierna_der{
+    width: 90px;
+    height: 200px;
+    position: absolute;
+    background-color: #c4c4c4;
+    bottom: -150px;
+    right: 30px;
+  }
+.cuerpo .pierna_der .pie_der{
+    width: 160px;
+    height: 80px;
+    position: absolute;
+    background-color: yellow;
+    bottom: -80px;
+    right: -50px;
+}
+.cuerpo .pierna_izq .pie_izq{
+    width: 160px;
+    height: 80px;
+    position: absolute;
+    background-color: yellow;
+    bottom: -80px;
+    left: -50px;
+}
