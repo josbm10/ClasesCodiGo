@@ -1,8 +1,7 @@
-
+body{margin: auto;}
 .contenedor {
   width: 900px;
   height: 900px;
-  background-color: tomato;
   position: relative;
   text-align: center;
 }
@@ -27,7 +26,9 @@
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+}
+.redes span{
+    margin: 20px;
 }
 
 /* robot-------------------------------------------------- */
