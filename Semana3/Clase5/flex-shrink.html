@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex {
+            display: flex;
+            background-color: rgb(243, 13, 52);
+            width: 400px;
+        }
+
+        .flex div {
+            width: 200px;
+            flex-shrink: 1;
+        }
+
+        /* espacio no disponible =1200px
+        total suma espacio shrink=8 
+        unit-grow=1200px/8-150px*/
+
+        .flex div:nth-child(odd) {
+            background-color: red;
+        }
+
+        .flex div:nth-child(even) {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+
+</html>

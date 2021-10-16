@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header,
+        footer {
+            background-color: red;
+            padding: 20px;
+        }
+
+        main {
+            flex-grow: 1;
+            display: flex;
+        }
+
+        aside {
+            background-color: green;
+            width: 150px;
+        }
+
+        /* > solo aplica cambios al primer hijo section que encuentre */
+        main>section {
+            flex-grow: 1;
+            background-color: pink;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+
+        <header>
+            header
+        </header>
+        <main>
+            <aside>aside</aside>
+            <section>menu principal
+                <section>otro section</section>
+            </section>
+
+        </main>
+        <footer>
+            footer
+        </footer>
+    </div>
+
+</body>
+
+</html>

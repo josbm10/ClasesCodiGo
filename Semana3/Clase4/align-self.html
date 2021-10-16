@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* space evenly da espacios iguales a todos los elemntos} */
+        .flex {
+            display: flex;
+            border: 1px solid orange;
+            margin-bottom: 10px;
+            height: 100px;
+            padding: 20px;
+        }
+
+        .flex div:nth-child(odd) {
+            background-color: red;
+        }
+
+        .flex div:nth-child(even) {
+            background-color: blue;
+        }
+
+        .flex-start {
+            align-self: flex-start;
+        }
+
+        .flex-end {
+            align-self: flex-end;
+        }
+
+        .center {
+            align-self: center;
+        }
+
+        .stretch {
+            /* stretch ocupa todo el margen de arriba a abajo */
+            align-self: stretch;
+        }
+
+        .baseline {
+            /* baseline alinea el menor elemento con el elemento height con fuente mas grande en base al interlineado */
+            align-self: baseline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flex">
+        <div class="flex-start">flex-start</div>
+        <div class="flex-end">flex-end</div>
+        <div class="center">center</div>
+        <div class="stretch">stretch</div>
+        <div class="baseline">baseline</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+.Proyecto {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 960px;
+  background-color: skyblue;
+  margin: auto;
+  position: relative;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  font-size: 36px;
+}
+h3 {
+  color: white;
+  font-size: 24px;
+}
+
+/* header-------------------------------------------------- */
+header {
+  height: 140px;
+  background-color: #00aab5;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  font-size: 64px;
+  padding: 20px;
+}
+nav ul {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+nav ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+/* main  ------------------------------------------ */
+/* hola------------------------------------ */
+main {
+  width: 100%;
+}
+.hola {
+  height: 525px;
+}
+.hola img {
+  position: static;
+  top: 140px;
+  right: 0;
+  left: 0;
+}
+.hola h1 {
+  position: absolute;
+  font-size: 64px;
+  top: 150px;
+  left: 350px;
+  color: grey;
+}
+.hola h2 {
+  position: absolute;
+  top: 560px;
+  left: 0px;
+  background: #7299fe80;
+  color: white;
+}
+/* skills ------------------------------------ */
+.skills {
+  height: 420px;
+  background: #7299fe;
+  color: #b508a3;
+  padding: 40px;
+}
+.skills div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 10px;
+}
+.skills div div {
+  display: flex;
+  flex-direction: column;
+}
+/* servicios---------------------------------- */
+.servicios {
+  height: 420px;
+  color: #00cc9b;
+  background: #fb7171;
+  padding: 50px;
+}
+.servicios div {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+.servicios div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+/* portafolio---------------------------------   */
+.portafolio {
+  padding: 50px;
+  background: #ffd233;
+  color: #8402a5;
+  height: 420px;
+}
+.portafolio div {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+/* clientes----------------------- */
+.clientes {
+  padding: 50px;
+  background: #3f4e62;
+  color: #ff00c7;
+  height: 260px;
+}
+.clientes div {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+/* contacto---------------------- */
+.contacto {
+  height: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #cee000;
+  background: #16a085;
+  padding: 50px;
+}
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contacto form input {
+  width: 360px;
+  height: 60px;
+  margin: 20px;
+}
+.contacto form textarea {
+  width: 760px;
+  height: 110px;
+  margin: 20px;
+  font-size: 18px;
+}
+.contacto form button {
+  width: 160px;
+  height: 60px;
+  margin: 20px;
+  background: #233451;
+  color: white;
+  font-size: 18px;
+}
+
+/* footer---------------------- */
+footer {
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00aab5;
+  color: white;
+  padding: 50px;
+}

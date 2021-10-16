@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .flex {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid orange;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 200px;
+    padding: 20px;
+    }
+    .flex div{
+        width: 50%;
+    }
+
+    .flex div:nth-child(odd) {
+    background-color: red;
+    }
+
+    .flex div:nth-child(even) {
+    background-color: blue;
+    }
+
+    .flex-start {
+   align-content: flex-start;
+    }
+
+    .flex-end {
+    align-content: flex-end;
+    }
+
+    .center {
+    align-content: center;
+    }
+
+    .stretch {
+    align-content: stretch;
+    }
+    .space-between{
+        align-content: space-between;
+    }
+    .space-around{
+        align-content: space-around;
+    }
+
+    </style>
+</head>
+
+<body>
+    <h2>flex star</h2>
+    <!-- se puede definir dos clases para el mismo elemento flex y felex-star-->
+    <div class="flex flex-start">
+        <div>caja1</div>
+        <div>caja2</div>
+        <div>caja3</div>
+        <div>caja4</div>
+    </div>
+    <h2>flex end</h2>
+    <div class="flex flex-end">
+        <div>caja1</div>
+        <div>caja2</div>
+        <div>caja3</div>
+        <div>caja4</div>
+    </div>
+    <h2>center</h2>
+    <div class="flex center">
+        <div>caja1</div>
+        <div>caja2</div>
+        <div>caja3</div>
+        <div>caja4</div>
+    </div>
+    <h2>stretch</h2>
+    <div class="flex stretch">
+        <div>caja1</div>
+        <div>caja2</div>
+        <div>caja3</div>
+        <div>caja4</div>
+    </div>
+    <h2>space-between</h2>
+    <div class="flex space-between">
+        <div>caja1</div>
+        <div>caja2</div>
+        <div>caja3</div>
+        <div>caja4</div>
+    </div>
+
+    <h2>space-around</h2>
+    <div class="flex space-around">
+        <div>caja1</div>
+        <div>caja2</div>
+        <div>caja3</div>
+        <div>caja4</div>
+    </div>
+
+</body>
+
+</html>
