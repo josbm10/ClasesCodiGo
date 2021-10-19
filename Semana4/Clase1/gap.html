@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            justify-content: center;
+        }
+
+        .grid {
+            /* 1fr esla medida de grid */
+            display: grid;
+            /* grid-template-columns: 150px 150px 150px 150px; */
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+        .grid img {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div><img src="https://picsum.photos/200/300?random=1">
+        </div>
+        <div><img src="https://picsum.photos/200/300?random=2">
+        </div>
+        <div><img src="https://picsum.photos/200/300?random=3">
+        </div>
+        <div><img src="https://picsum.photos/200/300?random=4">
+        </div>
+        <div><img src="https://picsum.photos/200/300?random=5">
+        </div>
+        <div><img src="https://picsum.photos/200/300?random=6">
+        </div>
+        <div><img src="https://picsum.photos/200/300?random=7">
+        </div>
+        <div><img src="https://picsum.photos/200/300?random=8">
+        </div>
+        <div><img src="https://picsum.photos/200/300?random=9">
+        </div>
+        <div><img src="https://picsum.photos/200/300?random=10">
+        </div>
+        <div><img src="https://picsum.photos/200/300?random=11">
+        </div>
+        <div><img src="https://picsum.photos/200/300?random=12">
+        </div>
+    </div>
+</body>
+
+</html>

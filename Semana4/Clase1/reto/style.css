@@ -1,0 +1,202 @@
+.container {
+  width: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  color: white;
+}
+/* globales------------------------------------------------------- */
+h1 {
+  color: black;
+  font-size: 22px;
+  padding: 20px;
+}
+h2 {
+  font-size: 18px;
+}
+.front {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background: #ad195a;
+  border-radius: 16px;
+  padding: 10px;
+}
+.back {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background: #26a6be;
+  border-radius: 16px;
+  padding: 10px;
+}
+.server {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background: #213576;
+  border-radius: 16px;
+  padding: 10px;
+}
+input {
+  margin-left: 50px;
+  margin-bottom: 20px;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  font-size: 16px;
+  height: 50px;
+  width: 900px;
+}
+hr {
+  margin: 10px 0px 20px 10px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  padding: none;
+}
+/* header------------------------------------------------------------- */
+
+header {
+  height: 100px;
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #242a59;
+}
+header ul {
+  width: 50%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+/* aside-------------------------------------------------------- */
+aside {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+grid-template-rows: 350px;
+  gap: 30px;
+}
+aside .aside1 {
+  background-image: url(./image/Rectangle\ 2.png);
+  padding: 20px;
+  border: 1px solid yellow;
+}
+.aside1 h2 {
+  font-size: 28px;
+}
+.aside1 p {
+  font-size: 20px;
+}
+.aside1 .autor {
+  display: flex;
+  justify-content: space-between;
+}
+aside .aside2 {
+  display: grid;
+  grid-template-rows: repeat(3, 110px);
+  gap: 10px;
+
+}
+aside .aside2 div:nth-child(1) {
+  background-image: url(./image/Rectangle\ 4.png);
+  padding: 10px;
+}
+aside .aside2 div:nth-child(2) {
+  background-image: url(./image/Rectangle\ 5.png);
+  padding: 10px;
+}
+aside .aside2 div:nth-child(3) {
+  background-image: url(./image/Rectangle\ 6.png);
+  padding: 10px;
+}
+/* main---------------------------------------------------- */
+main {
+  margin-right: 95px;
+  margin-left: 95px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "main1 main2"
+    "main3 main4"
+    "main5 main6"
+    "main7 main8"
+    "main9 main10"
+    "main11 main12";
+  gap: 20px;
+}
+main .titulo {
+  grid-area: titulo;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+main .main1 {
+  grid-area: main1;
+  background-image: url(./image/Rectangle\ 4.png);
+  padding: 20px;
+}
+main .main2 {
+  grid-area: main2;
+  background-image: url(./image/Rectangle\ 4.png);
+  padding: 20px;
+}
+main .main3 {
+  grid-area: main3;
+  background-image: url(./image/Rectangle\ 5.png);
+  padding: 20px;
+}
+main .main4 {
+  grid-area: main4;
+  background-image: url(./image/Rectangle\ 5.png);
+  padding: 20px;
+}
+main .main5 {
+  grid-area: main5;
+  background-image: url(./image/Rectangle\ 6.png);
+  padding: 20px;
+}
+main .main6 {
+  grid-area: main6;
+  background-image: url(./image/Rectangle\ 6.png);
+  padding: 20px;
+}
+main .main7 {
+  grid-area: main7;
+  background-image: url(./image/Rectangle\ 4.png);
+  padding: 20px;
+}
+main .main8 {
+  grid-area: main8;
+  background-image: url(./image/Rectangle\ 4.png);
+  padding: 20px;
+}
+main .main9 {
+  grid-area: main9;
+  background-image: url(./image/Rectangle\ 5.png);
+  padding: 20px;
+}
+main .main10 {
+  grid-area: main10;
+  background-image: url(./image/Rectangle\ 5.png);
+  padding: 20px;
+}
+main .main11 {
+  grid-area: main11;
+  background-image: url(./image/Rectangle\ 6.png);
+  padding: 20px;
+}
+main .main12 {
+  grid-area: main12;
+  background-image: url(./image/Rectangle\ 6.png);
+  padding: 20px;
+}
+/* footer------------------------------------------------ */
+footer {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
