@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        /* width device es para adaptarse al tamaño de pantalla del dispositivo,scale es para un zoom incial en la pantalla,user scaleble es para no hacer zoom en la pantalla */
+        div {
+            background: red;
+        }
+
+        @media (min-width:320px) and (max-width:480px) and (orientation:portrait) {
+            div {
+                background: blue;
+            }
+        }
+
+        @media (min-height:600px),
+        (max-height:480px) {
+            div {
+                background: orange;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>header</header>
+        <main>
+            main
+        </main>
+        <footer>footer</footer>
+    </div>
+</body>
+
+</html>

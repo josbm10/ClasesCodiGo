@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: red;
+            max-width: 1280px;
+            margin: auto;
+            padding: 20px;
+            box-sizing: border-box;
+            font-size: 42px;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flex div {
+            width: 50%;
+            background-color: white;
+            border: 1px solid red;
+        }
+
+        div header {
+            background: brown;
+        }
+
+        div footer {
+            background: brown;
+        }
+
+        /*mobil small 320px-420px */
+        @media (min-width: 320px) and (max-width:480px) {
+            div {
+                background: pink;
+                max-width: 380px;
+                font-size: 22px;
+            }
+        }
+
+        /*mobil large 420px-720px */
+        @media (min-width: 480px) and (max-width:720px) {
+            div {
+                background: blue;
+                max-width: 620px;
+                font-size: 28px;
+            }
+
+            div header {
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 100%;
+            }
+        }
+
+        /*desktop o tablet 720px-1080px */
+        /* es importante primero poner el tamaño mas pequeño y luego el grande */
+        @media (min-width: 720px) and (max-width:1080px) {
+            div {
+                background: blueviolet;
+                max-width: 980px;
+                font-size: 34px;
+            }
+
+            .flex div {
+                width: 100%;
+            }
+
+            div header {
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 100%;
+            }
+        }
+
+        /*desktop xl 1080px a + */
+        @media (min-width: 1080px) {
+            div {
+                background: brown;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>header</header>
+        <main>
+            <div class="flex">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+            </div>
+        </main>
+        <footer>footer</footer>
+    </div>
+</body>
+
+</html>

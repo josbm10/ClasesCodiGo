@@ -1,0 +1,72 @@
+div {
+  background-color: red;
+  max-width: 1280px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 42px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex div {
+  width: 50%;
+  background-color: white;
+  border: 1px solid red;
+}
+div header {
+  background: brown;
+}
+div footer {
+  background: brown;
+}
+/*desktop o tablet 720px-1080px */
+/* es importante primero poner el tamaño mas pequeño y luego el grande */
+@media (min-width: 720px) and (max-width:1080px) {
+  div {
+    background: blueviolet;
+    max-width: 980px;
+    font-size: 36px;
+  }
+  .flex div{
+    width: 100%;
+  }
+  div header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+}
+
+/*mobil large 420px-720px */
+@media (min-width: 420px) and (max-width:720px) {
+  div {
+    background: blue;
+    max-width: 620px;
+    font-size: 24px;
+  }
+  div header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+}
+/*mobil small 320px-420px */
+@media (min-width: 320px) and (max-width:420px) {
+  div {
+    background: pink;
+    max-width: 380px;
+    font-size: 18px;
+  }
+}
+/*mobil xsmall 0px-320px */
+@media (min-width: 0px) and (max-width:320px) {
+  div {
+    background: orange;
+    max-width: 280px;
+    font-size: 14px;
+  }

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: white;
+            max-width: 1280px;
+            box-sizing: border-box;
+            font-size: 42px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .flex div {
+            height: 130px;
+            width: 48%;
+            background: #C4C4C4;
+            margin: 1%;
+
+        }
+
+        div header {
+            background: #C4C4C4;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div footer {
+            background: #C4C4C4;
+            width: 100%;
+            height: 80px;
+        }
+
+        @media (min-width: 720px) and (max-width:1080px) {
+            div {
+                max-width: 880px;
+                font-size: 24px;
+            }
+
+            .flex div {
+                height: 130px;
+                width: 40%;
+                background: red;
+                margin: 5%;
+            }
+        }
+
+        @media(max-width:720px) {
+            div {
+                max-width: 620px;
+                font-size: 16px;
+            }
+            .flex div:nth-child(odd){
+                height: 65px;
+                width: 90%;
+                background: yellow;
+                margin-bottom: 0px;
+            }
+            .flex div:nth-child(even){
+                height: 65px;
+                width: 90%;
+                background: yellow;
+                margin-top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>Titulo Principal</header>
+        <main>
+            <div class="flex">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+
+</html>

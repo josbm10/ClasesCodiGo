@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background: red;
+        }
+
+        /* PUNTOS DE QUIEBRE
+        MOBILE XS : 0 -320
+         MOBILE SM : 320 - 480
+        MOBILE L : 480 - 680
+        TABLET :680-840
+        DESKTOP :840 + TAMAÑO DEL LAYOUT
+        DESKTOP XL:TAMAÑO DEL LAYOUT A TAMAÑO DESEADO
+        */
+
+        /* > 320PX */
+        /* @media (min-width:320px) {
+            div {
+                background: orange;
+            }
+        } */
+
+        /* <680PX */
+        @media (max-width:680px) {
+            div header{
+                background-color: skyblue;
+            }
+        }
+
+        /* >480PX @media (min-height:480px) {
+            div {
+                background: orange;
+            }
+        } */
+
+        /* <800PX */
+        @media (max-height:800px) {
+            div {
+                background: orange;
+            }
+        }
+
+        /* orientation */
+        /* lanscape*/
+        /* @media (orientation:landscape) {
+            div {
+                background: blue;
+            }
+        } */
+        /* portrait parado*/
+        @media (orientation:portrait) {
+            div {
+                color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>header</header>
+        <main>
+            <div class="flex">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+            </div>
+        </main>
+        <footer>footer</footer>
+    </div>
+</body>
+
+</html>
