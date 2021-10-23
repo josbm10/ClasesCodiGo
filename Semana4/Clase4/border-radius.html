@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+        }
+
+        div.radius {
+            /* linear gradient */
+            width: 100px;
+            height: 100px;
+            background: red;
+            border-radius: 56px 0;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        div.radius:last-child {
+            margin-right: 0px;
+        }
+
+        .flex:hover div.radius::after {
+            border-radius: 0 20px 0 20px;
+        }
+
+        div.radius::after {
+            content: "";
+            width: 40%;
+            height: 40%;
+            background: white;
+            position: absolute;
+            border-radius: 20px 0 20px 0;
+        }
+
+        .flex {
+            /* box-shadow da sombras tambien existen genradores de sombras */
+            display: inline-flex;
+            background: blue;
+            box-shadow: 10px 10px 1px #00ff68, 20px 20px 0px #ff0000, 30px 30px 0px yellow;
+        }
+
+        h1 {
+            text-shadow: 2px 2px 0 red, 4px 4px 0 blue, 6px 6px 0 pink, 8px 8px 0 green;
+            background: linear-gradient(50deg,yellow,orange),no-repeat;
+            border: 2px solid red;
+            padding: 20px;
+            /* transition-property:text-shadow,linear-gradient,border-radius */
+            /* se puede remplazar por transition:all;
+            transition-duration:0.5s
+            transition-timing-function:ease 
+            transition-delay:2s*/
+            transition:all 0.5s ease-out;
+        }
+        h1:hover {
+            text-shadow: -2px -2px 0 red, -4px -4px 0 blue, -6px -6px 0 pink, -8px -8px 0 green;
+            background: linear-gradient(100deg,yellow,orange),no-repeat;
+            border: 10px solid orange;
+        }
+
+        .linear {
+            color: white;
+            background: linear-gradient(90deg, transparent, blue, pink, red, orange, brown), no-repeat;
+        }
+
+        .radial {
+            margin: auto;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background: radial-gradient(red 10%, blue 20%, orange);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="radius"></div>
+        <div class="radius"></div>
+    </div>
+    <br><br>
+    <h1>text shadow</h1>
+    <div class="linear">linear-gradient</div>
+    <div class="radial">radial-gradient</div>
+</body>
+
+</html>

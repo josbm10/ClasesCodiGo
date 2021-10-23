@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            animation-name: animation;
+            animation-duration: 3s;
+            /* count es el cuantas veces se realiza la animacion puede ser infinite */
+            animation-iteration-count: 1;
+            /* direction hace funcionar el ciclo de animacion inicio-fin=reverse o intercalado=alternate o mescla*/
+            animation-direction: alternate;
+            /* forward hace que se termine de ejecutar con la animacion terminada no reiniciada*/
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes animation {
+            /* from {
+                font-size: 0px;
+                background: red;
+                color: black;
+            }
+
+            to {
+                font-size: 40px;
+                background: orange;
+                color: blue;
+            } */
+
+            /* puedes poner de hasta o porcentajes del tiempo transcurrido */
+            0% {
+                font-size: 0px;
+                color: red;
+            }
+
+            25% {
+                font-size: 10px;
+                color: blue;
+            }
+
+            50% {
+                font-size: 20px;
+                color: yellow;
+            }
+
+            75% {
+                font-size: 30px;
+                color: purple;
+            }
+
+            100% {
+                font-size: 40px;
+                color: green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <style>
+        .like {
+          display: block;
+          width: 110px;
+          height: 110px;
+          margin: 0 auto;
+          background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/349115/like_animation.png) 0 0 no-repeat;
+          background-size: 3000%;
+        }
+    
+        .has-like {
+          animation: like-gif steps(28) 1s infinite both;
+        }
+    
+        .pause {
+          animation-play-state: paused;
+        }
+    
+        @keyframes like-gif {
+          0% {
+            background-position: 0%;
+          }
+    
+          100% {
+            background-position: 100%;
+          }
+        }
+      </style>
+      <button class="like ">
+        LIKE
+      </button>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit tenetur reprehenderit quo accusantium voluptatum
+        aperiam quis, unde necessitatibus illo, cum harum aliquid in inventore quaerat. Quis nemo quibusdam porro
+        minima.</p>
+
+    
+    <script>
+        // atrapando al boton
+        document.querySelector('button')
+            .onclick = function () {
+                // agrega la clase
+                document.querySelector('button').classList.add('has-like')
+
+                // quita la clase despues de un segundo
+                setTimeout(function () {
+                    document.querySelector('button').classList.remove('has-like')
+                }, 1000)
+
+            }
+    </script>
+
+</body>
+
+
+</html>
