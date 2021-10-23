@@ -73,6 +73,7 @@ main {
 .skills {
   background: #7299fe;
   color: #b508a3;
+  padding: 20px;
 }
 .skills div {
   display: flex;
@@ -89,6 +90,7 @@ main {
 .servicios {
   color: #00cc9b;
   background: #fb7171;
+  padding: 20px;
 }
 .servicios div {
   display: flex;
@@ -105,6 +107,7 @@ main {
 .portafolio {
   background: #ffd233;
   color: #8402a5;
+  padding: 20px;
   /* height: 420px; */
 }
 .portafolio div {
@@ -120,6 +123,7 @@ main {
 
 /* clientes----------------------- */
 .clientes {
+  padding: 20px;
   background: #3f4e62;
   color: #ff00c7;
   /* height: 260px; */
@@ -136,6 +140,7 @@ main {
 }
 /* contacto---------------------- */
 .contacto {
+  padding: 20px;
   color: #cee000;
   background: #16a085;
   display: flex;
@@ -155,6 +160,7 @@ main {
 }
 .contacto form input {
   width: 40%;
+  height: 40px;
   margin: 2%;
 }
 .contacto form textarea {
