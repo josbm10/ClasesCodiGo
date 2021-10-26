@@ -1,0 +1,22 @@
+.btn {
+  border-radius: 16px;
+  text-align: center;
+
+  &.small {
+    font-size: $font_small;
+  }
+  &.medium {
+    font-size: $font_medium;
+  }
+  &.large {
+    font-size: $font_large;
+  }
+
+  &.red {
+    background: $color_red;
+  }
+
+  &.blue {
+    background: $color_blue;
+  }
+}

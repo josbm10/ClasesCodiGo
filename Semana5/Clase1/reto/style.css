@@ -1,0 +1,25 @@
+.btn {
+  border-radius: 16px;
+  text-align: center;
+}
+
+.btn.small {
+  font-size: 18px;
+}
+
+.btn.medium {
+  font-size: 36px;
+}
+
+.btn.large {
+  font-size: 64px;
+}
+
+.btn.red {
+  background: red;
+}
+
+.btn.blue {
+  background: blue;
+}
+/*# sourceMappingURL=style.css.map */
