@@ -1,6 +1,7 @@
 .btn {
   border-radius: 16px;
   text-align: center;
+  color: white;
 }
 
 .btn.small {
