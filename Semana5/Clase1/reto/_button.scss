@@ -16,8 +16,19 @@
   &.red {
     background: $color_red;
   }
-
   &.blue {
     background: $color_blue;
+  }
+  &.yellow {
+    background: $color_yellow;
+  }
+  &.green {
+    background: $color_green;
+  }
+  &.gray {
+    background: $color_gray;
+  }
+  &.purple {
+    background: $color_purple;
   }
 }
