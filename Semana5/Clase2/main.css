@@ -1,0 +1,73 @@
+main, header {
+  padding: 20px;
+  background: red;
+}
+
+main, header {
+  padding: 20px;
+  background: yellow;
+}
+
+div {
+  background: url("google.com.pe/mi-imagen.pgn");
+}
+
+div {
+  padding: 0px;
+  color: red;
+}
+
+div {
+  padding: 20px;
+  color: yellow;
+}
+
+.color_blue {
+  color: blue;
+}
+
+.color_red {
+  color: red;
+}
+
+.color_black {
+  color: black;
+}
+
+.color_green {
+  color: green;
+}
+
+.color_yellow {
+  color: yellow;
+}
+
+.space_14px {
+  font-size: 14px;
+}
+
+.space_18px {
+  font-size: 18px;
+}
+
+.space_32px {
+  font-size: 32px;
+}
+
+.space_64px {
+  font-size: 64px;
+}
+
+.color_primary {
+  color: red;
+}
+
+.color_secundary {
+  color: blue;
+}
+
+.ejemplo_map {
+  font-size: 34px;
+  color: red;
+}
+/*# sourceMappingURL=main.css.map */

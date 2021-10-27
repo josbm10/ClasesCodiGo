@@ -1,0 +1,97 @@
+// extend
+%boxred {
+  padding: 20px;
+  background: red;
+}
+%other {
+  padding: 20px;
+  background: yellow;
+}
+main {
+  @extend %other;
+  @extend %boxred;
+}
+header {
+  @extend %other;
+  @extend %boxred;
+}
+// interpolacion
+$url-base: "google.com.pe";
+
+div {
+  background: url("#{$url-base}/mi-imagen.pgn");
+}
+
+// MIXINGS
+
+@mixin box_color($padding: 0px, $color: red) {
+  padding: $padding;
+  color: $color;
+}
+div {
+  @include box_color();
+}
+div {
+  @include box_color(20px, yellow);
+}
+
+// controles de flujo
+$font_size_h1: 64px;
+$font_size_h2: 32px;
+$font_size_h3: 16px;
+$font_size_base: 14px;
+
+@mixin font_title($tag_title) {
+  @if ($tag_title == h1) {
+    font-size: $font_size_h1;
+  } @else if ($tag_title == h2) {
+    font-size: $font_size_h2;
+  } @else if ($tag_title == h3) {
+    font-size: $font_size_h3;
+  } @else {
+    font-size: $font_size_base;
+  }
+}
+
+// each
+
+$colors: blue, red, black, green, yellow;
+@each $color in $colors {
+  .color_#{$color} {
+    color: $color;
+  }
+}
+$spaces: 14px, 18px, 32px, 64px;
+@each $space in $spaces {
+  .space_#{$space} {
+    font-size: $space;
+  }
+}
+// maps
+
+$font_size_map: (
+  h1: 34px,
+  h2: 24px,
+  h3: 16px,
+  h4: 13px,
+);
+$color_branding: (
+  primary: red,
+  secundary: blue,
+);
+$color_semantic: (
+  danger: red,
+  warning: orange,
+  info: blue,
+  success: green,
+);
+
+@each $key, $value in $color_branding {
+  .color_#{$key} {
+    color: $value;
+  }
+}
+.ejemplo_map {
+  font-size: map-get($font_size_map, h1);
+  color: map-get($color_branding, primary);
+}

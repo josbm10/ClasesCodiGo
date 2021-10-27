@@ -1,0 +1,26 @@
+.card {
+    &.small {
+      max-width: 360px;
+      max-height: 530px;
+      background: skyblue;
+      border-radius: 16px;
+      position: relative;
+      margin: 20px;
+    }
+    &.medium {
+      max-width: 512px;
+  
+      background: skyblue;
+      border-radius: 8px;
+      position: relative;
+      margin: 10px;
+    }
+    &.large {
+      max-width: 608px;
+  
+      background: skyblue;
+      border-radius: 8px;
+      position: relative;
+      margin: 10px;
+    }
+  }
