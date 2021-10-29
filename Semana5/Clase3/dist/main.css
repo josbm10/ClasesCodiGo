@@ -1,0 +1,43 @@
+.btn {
+  min-width: 120px;
+  padding: 10px 15px;
+  border: 1px solid grey;
+  background: grey;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: orange;
+  border: orange;
+}
+
+.btn-secondary {
+  background: purple;
+  border: purple;
+  color: white;
+}
+
+.btn-sm {
+  font-size: 12px;
+  min-width: 800px;
+  padding: 8px 10px;
+}
+
+.alert {
+  background: grey;
+  padding: 20px;
+  font-size: 14px;
+  border: 1px solid grey;
+  color: white;
+}
+
+.alert-success {
+  background: green;
+  border: green;
+}
+
+.alert-error {
+  background: red;
+  border: red;
+}
+/*# sourceMappingURL=main.css.map */

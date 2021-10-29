@@ -1,0 +1,20 @@
+.span {
+  
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #334680;
+
+  &.time {
+    width: 63px;
+    height: 26px;
+    padding: 5px;
+    border: 1px solid #334680;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+}

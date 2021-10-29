@@ -1,0 +1,40 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  &.nav {
+    position:absolute;
+    
+    right: 9%;
+    width: 20%;
+    height: 60px;
+    background: #1e86ff;
+    border-radius: 4px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+  }
+  &.footer {
+    color: #1e86ff;
+    margin: 5px;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #1e86ff;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+  }
+  &.footer:nth-child(5) {
+    border:none;
+  }
+  &.footer:hover {
+    color: white;
+    background: #1e86ff;
+  }
+}

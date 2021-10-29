@@ -1,0 +1,15 @@
+.alert{
+    background: grey;
+    padding: 20px;
+    font-size: 14px;
+    border: 1px solid grey;
+    color: white;
+}
+.alert-success{
+    background: green;
+    border: green;
+}
+.alert-error{
+    background: red;
+    border: red ;
+}

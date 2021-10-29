@@ -1,0 +1,105 @@
+.btn {
+  min-width: 120px;
+  padding: 10px 15px;
+  border: 1px solid grey;
+  background: grey;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: orange;
+  border: orange;
+}
+
+.btn-secondary {
+  background: purple;
+  border: purple;
+  color: white;
+}
+
+.btn-sm {
+  font-size: 12px;
+  min-width: 800px;
+  padding: 8px 10px;
+}
+
+.alert {
+  background: grey;
+  padding: 20px;
+  font-size: 14px;
+  border: 1px solid grey;
+  color: white;
+}
+
+.alert-success {
+  background: green;
+  border: green;
+}
+
+.alert-error {
+  background: red;
+  border: red;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: orange;
+  padding: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  font-size: 24px;
+}
+
+.header__nav {
+  background: yellow;
+}
+
+.header--dark {
+  background: black;
+  color: white;
+}
+
+.header a {
+  color: white;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: blue;
+  padding: 20px;
+}
+
+.nav a {
+  color: white;
+}
+
+.nav__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__li {
+  margin: 0px 10px;
+}
+
+.nav--light {
+  background: pink;
+}
+/*# sourceMappingURL=main.css.map */

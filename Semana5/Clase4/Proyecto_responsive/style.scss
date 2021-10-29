@@ -1,0 +1,44 @@
+
+
+body {
+  max-width: 1300px;
+  margin: none;
+}
+.container {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@import "./h1";
+@import "./input";
+@import "./label";
+@import "./button";
+@import "./h2";
+@import "./button";
+@import "./span";
+@import "./card";
+@import "./header";
+@import "./aside";
+@import "./main";
+@import "./footer";
+@media screen and (max-width:680px){
+    .container{
+        max-width: 480px;
+    }
+    .aside{
+        width: 100%;
+    }.main{
+        width: 100%;
+    }
+    .pages{
+      width: 100%;
+      justify-content: center;
+    }
+    .placeone{
+      position: static;
+    }
+    .placetwo{
+      position: static;
+    }
+
+}

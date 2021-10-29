@@ -1,0 +1,21 @@
+.header {
+    width: 100%;
+    nav {
+      background: url("https://picsum.photos/seed/picsum/1200/140");
+      height: 150px;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      div {
+        margin: none;
+        padding: none;
+        position:relative;
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }

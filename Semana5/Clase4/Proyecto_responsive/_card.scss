@@ -1,0 +1,43 @@
+.card {
+  
+  display: flex;
+  position: relative;
+  margin: 20px;
+  background-color: #e8e8e4;
+  img {
+    display: block;
+    margin: 20px;
+    width: 90px;
+    height: 90px;
+    font-size: cover;
+  }
+  div {
+    margin: 20px;
+  }
+}
+.placeone{
+  position: absolute;
+  right: 5px;
+  bottom: 0;
+  color: #334680;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.placetwo{
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+  color: #334680;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
