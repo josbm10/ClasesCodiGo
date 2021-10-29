@@ -29,17 +29,28 @@ h1 {
 
 .input.aside {
   width: 80%;
+  border: none;
   height: 45px;
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
 }
 
+.input.aside:focus {
+  outline: none;
+}
+
 .input.nav {
+  width: 100%;
+  border: none;
+  height: 55px;
+  border: none;
   padding: 0;
-  width: 80%;
-  height: 56px;
   -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input.nav:focus {
+  outline: none;
 }
 
 .label {
@@ -66,10 +77,8 @@ h1 {
 }
 
 .btn.nav {
-  position: absolute;
-  right: 9%;
   width: 20%;
-  height: 60px;
+  height: 55px;
   background: #1e86ff;
   border-radius: 4px;
   font-family: Roboto;
@@ -132,10 +141,8 @@ h1 {
 }
 
 .btn.nav {
-  position: absolute;
-  right: 9%;
   width: 20%;
-  height: 60px;
+  height: 55px;
   background: #1e86ff;
   border-radius: 4px;
   font-family: Roboto;
@@ -253,6 +260,7 @@ h1 {
 }
 
 .header nav {
+  width: 100%;
   background: url("https://picsum.photos/seed/picsum/1200/140");
   height: 150px;
   display: -webkit-box;
@@ -268,22 +276,32 @@ h1 {
           align-items: center;
 }
 
-.header nav div {
+.header .search {
+  width: 80%;
+  height: 60px;
+  background: white;
   margin: none;
   padding: none;
-  position: relative;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header .search div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: grey;
+  margin: 10px;
 }
 
 .aside {
@@ -293,6 +311,20 @@ h1 {
 .aside div {
   margin-bottom: 15px;
   margin-top: 15px;
+}
+
+.aside .search-two {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: grey;
+  margin: 10px;
 }
 
 .main {
@@ -326,6 +358,14 @@ h1 {
 .footer span {
   margin-top: 50px;
   margin-bottom: 20px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #334680;
 }
 
 @media screen and (max-width: 680px) {

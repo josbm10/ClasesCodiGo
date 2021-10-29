@@ -1,9 +1,16 @@
 .aside{
     width: 30%;
-    
-    
     div{
          margin-bottom: 15px;
          margin-top: 15px;
+    }
+    .search-two{
+        width: 100%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+       color: grey;
+       margin: 10px;
+    
     }
 }
