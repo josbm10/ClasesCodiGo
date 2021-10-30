@@ -1,14 +1,5 @@
 
-
-body {
-  max-width: 1300px;
-  margin: none;
-}
-.container {
-  max-width: 1200px;
-  display: flex;
-  flex-wrap: wrap;
-}
+@import "./container";
 @import "./h1";
 @import "./input";
 @import "./label";
@@ -21,6 +12,7 @@ body {
 @import "./aside";
 @import "./main";
 @import "./footer";
+
 @media screen and (max-width:680px){
     .container{
         max-width: 480px;
