@@ -1,24 +1,44 @@
 Proceso catorce
-	Definir verde,blanco,rojo Como real
+	Dimension focos[100]
+	Definir verde,rojo,blanco Como Entero
 	Definir color Como Caracter
-	rojo=0
-	blanco=0
-	verde=0
-	Repetir
-		Escribir "indique el color:rojo,verde,blanco o salir"
+	Escribir "cuantos focos tiene:"
+	Leer n
+	Para x=1 Hasta n Con Paso 1 Hacer
+		Escribir "ingrese el color |v||r||b|"
 		Leer color
-		Si color == "rojo" Entonces
-			rojo=rojo+1
+		Si color=="v" Entonces
+			focos[x]=color
 		SiNo
-			Si color == "verde" Entonces
-				verde=verde+1
+			Si color=="b" Entonces
+				focos[x]=color
 			SiNo
-				Si color == "blanco" Entonces
-					blanco=blanco+1
+				Si color=="r"  Entonces
+					focos[x]=color
 				SiNo
+					Escribir "error"
+					x=x-1
 				Fin Si
 			Fin Si
 		Fin Si
-	Hasta Que color="salir"
-	Escribir "rojos: " rojo " verdes: " verde " blancos: " blanco
+	
+	Fin Para
+	Para x=1 Hasta n Con Paso 1 Hacer
+		Si focos[x]=="v" Entonces
+			verde=verde+1
+		SiNo
+			Si focos[x]=="b" Entonces
+				blanco=blanco+1
+			SiNo
+				Si focos[x]=="r"  Entonces
+					rojo=rojo+1
+				SiNo
+					Escribir "error"
+				Fin Si
+			Fin Si
+		Fin Si
+	Fin Para
+	Escribir "usted tiene focos: rojos: " rojo " verdes: " verde " blancos: " blanco
+	
+	
 FinProceso
