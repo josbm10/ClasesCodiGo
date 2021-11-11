@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+    background-color: red;
+  color: rgb(25, 25, 25);}
+  </style>
+</head>
+<body>
+  <button class="btn_one">hola</button>
+  <button class="btn_two">hola2</button>
+  <div>div</div>
+  <script>
+    const div  = document.querySelector("body");
+    const btn=document.createElement("button");
+    btn.innerHTML="Hola Mundo"
+    div.appendChild(btn);
+    btn.addEventListener('click',function(){
+      alert("hola mundo");
+    });
+    // const buton=document.querySelector(".btn_one");
+    // buton.addEventListener('click',function(){
+    //   alert("hola mundo");
+    // });
+    const butontwo=document.querySelector(".btn_two");
+    butontwo.addEventListener('click',function(){
+      if(document.querySelector("div").style.display==="block"){
+        document.querySelector("div").style.display="none";
+      }else{document.querySelector("div").style.display="block"}
+    });
+  </script>
+</body>
+</html>

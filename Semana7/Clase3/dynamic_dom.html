@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: arial;
+    }
+
+   form input {
+      width: 100%;
+      padding: 20px;
+      transition: all .5s ease;
+    }
+
+    form input:focus {
+      outline: none;
+    }
+
+    form div {
+      padding: 20px;
+    }
+
+    form button {
+      background: green;
+      color: white;
+      padding: 10px;
+      width: 100%;
+      border: 1px solid orange;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 10px 0 20px;
+    }
+    .app{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 10px;
+      padding: 20px;
+      border: 1px solid red;
+      margin: 15px;
+      border-radius: 8px;
+      background: grey;
+    }
+    .card{
+      border: 1px solid red;
+      padding: 10px;
+      position: relative;
+      border-radius: 8px;
+      background: white;
+    }
+    .card:hover{
+      box-shadow:5px rgb(80, 11, 11);
+    }
+    .card h2{
+      font-size: 13px;
+      color: royalblue;
+      margin-bottom: 5px;
+    }
+    .card h2 span{
+      color: black;
+    }
+    .card img{
+      width: 100%;
+    }
+    .card button{
+      position: absolute;
+      top: -15px;
+      right: -15px;
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      background: blueviolet;
+      color: white;
+      border: 1px solid green;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>formulario</h1>
+  <form action="">
+    <div><input class="js_name" type="text" placeholder="nombre" autocomplete="nope" required></div>
+    <div><input class="js_lastname" type="text" placeholder="apellido" autocomplete="nope" required></div>
+    <div><input class="js_age" type="number" placeholder="edad" autocomplete="nope" required></div>
+    <div><input class="js_photo" type="text" placeholder="foto url" autocomplete="nope" required></div>
+    <button>enviar</button>
+
+  </form>
+  <div id="app" class="app"></div>
+
+  <script>
+    const inputName = document.querySelector(".js_name");
+    const inputLastname = document.querySelector(".js_lastname");
+    const inputAge = document.querySelector(".js_age");
+    const inputImg = document.querySelector(".js_photo");
+    const form = document.querySelector("form");
+    const app=document.getElementById('app');
+
+    form.addEventListener('submit', function (o) {
+      o.preventDefault()
+
+      const article = document.createElement('article');
+      article.innerHTML = `
+        <h2> Nombre completo:  <span>${inputName.value} ${inputLastname.value}</span> </h2 >
+        <h2> Edad: <span>${inputAge.value}</span></h2>
+        <figure>
+          <img src="${inputImg.value}" alt=" ${inputName.value} ${inputLastname.value}">
+        </figure>
+          <button>X</button>
+          `
+      // article.querySelector('button').onclick = function () {
+      //   article.remove()}
+      article.classList.add("card")
+      article.querySelector('button').onclick=function(){
+        const flag=confirm('estas seguro de borrar la tarjeta');
+        if(flag) app.removeChild(article)
+      }
+      app.appendChild(article)
+      this.reset()
+      // console.log('article', article)
+      // const div=document.querySelector('body')
+      // div.appendChild(article)
+    })
+  </script>
+</body>
+
+</html>

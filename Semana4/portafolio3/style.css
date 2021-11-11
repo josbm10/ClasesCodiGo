@@ -1,5 +1,30 @@
 h2 {
   width: 100%;
+  color: #00CF95;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+li {
+  color: #0098ef;
+}
+
+a {
+  text-decoration: none;
+}
+
+li:hover {
+  border-bottom: 10px solid #6d0ad3;
 }
 
 .container {
@@ -7,25 +32,50 @@ h2 {
   margin: auto;
 }
 
+.redes {
+  width: 15%;
+}
+
 header {
-  margin-right: 200px;
-  margin-left: 200px;
+  margin-right: 100px;
+  margin-left: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-line-pack: center;
-      align-content: center;
+}
+
+header nav {
+  width: 40%;
+}
+
+main {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about .cv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-main {
-  margin-right: 200px;
-  margin-left: 200px;
+.about div {
+  width: 46%;
+  margin: 2%;
 }
 
 .portafolio {
@@ -37,19 +87,28 @@ main {
 }
 
 .portafolio img {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 23%;
   margin: 1%;
+  border: 5px solid #d1ffa2;
 }
 
-.servicios {
+.servicios .service {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-right: 150px;
+  margin-left: 150px;
 }
 
-.servicios div {
+.servicios .service div {
+  border-radius: 8px;
+  border: 5px solid #d1ffa2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 220px;
   width: 46%;
   margin: 2%;
@@ -67,6 +126,22 @@ main {
 .blog div {
   width: 33%;
   background: #00cf95;
+}
+
+.blog .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog .center div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .contacto {
@@ -90,7 +165,7 @@ main {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 8px;
-  width: 46%;
+  width: 45%;
   margin: 2%;
   padding: 20px;
 }
@@ -100,7 +175,7 @@ main {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 8px;
-  width: 46%;
+  width: 45%;
   margin: 2%;
   padding: 20px;
 }
@@ -111,13 +186,17 @@ main {
           box-sizing: border-box;
   border-radius: 8px;
   padding: 10px;
-  width: 96%;
+  width: 95%;
   margin: 2%;
 }
 
 .contacto form button {
-  width: 140px;
+  margin-right: 40%;
+  margin-left: 40%;
+  width: 20%;
   height: 60px;
+  color: white;
+  font-size: 16px;
   background: #6d0ad3;
   border-radius: 8px;
 }
@@ -130,9 +209,15 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer div {
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,9 +229,13 @@ footer div {
           align-items: center;
 }
 
-@media (max-width: 480px) {
+footer ul {
+  width: 40%;
+}
+
+@media (max-width: 800px) {
   .container {
-    max-width: 360px;
+    max-width: 780px;
     background: red;
     margin: 0;
   }
@@ -160,8 +249,9 @@ footer div {
     width: 98%;
     margin: 1%;
   }
-  .servicios div {
-    width: 100%;
+  .servicios .service div {
+    width: 90%;
+    margin: 5%;
   }
   .blog div {
     width: 100%;
