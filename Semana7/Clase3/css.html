@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .button_active{
+      background: green;
+      color: white;
+    }
+    .format_title{
+      background: orange;
+      color: red;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Lorem ipsum</h1>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum dolores quia culpa commodi? Inventore, quaerat!
+    Mollitia eveniet tenetur qui, neque, quo, dolorem sapiente voluptas voluptatibus inventore accusantium error
+    architecto reprehenderit!</p>
+    <button>button</button>
+  <script>
+    const h1=document.querySelector("h1");
+    const button=document.querySelector("button");
+
+    button.onclick=function(){
+      if(this.textContent==="presionado"){
+        this.textContent="sin presionar";
+        h1.style.border="";
+        // this.classList.remove("button_active");
+      }else {
+        this.textContent="presionado";
+        h1.style.border="10px solid grey";
+        // this.classList.add("button_active");
+      }
+
+      this.classList.toggle("button_active");
+      h1.classList.toggle("format_title");
+    }
+  </script>
+</body>
+
+</html>
