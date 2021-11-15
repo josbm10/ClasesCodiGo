@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+}
+h2 {
+  color: white;
+}
+.container{
+  max-width: 450px;
+  margin: auto;
+}
+/* card=================================== */
+.card {
+  width: 400px;
+  height: 300px;
+  transform-style: preserve-3d;
+  position: relative;
+  transition: transform 1s;
+}
+.flip {
+  transform: rotateY(180deg);
+}
+/* front================================= */
+.front {
+  width: 100%;
+  height: 100%;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  border-radius: 8px;
+  position: absolute;
+}
+
+.div_img_visa {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+}
+.div_img_sim {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+}
+.div_number {
+  font-size: 18px;
+  position: absolute;
+  bottom: 120px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  height: 45px;
+}
+.div_number_one,
+.div_number_two,
+.div_number_three,
+.div_number_four {
+  width: 50px;
+}
+
+.div_expiration {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-content: center;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: white;
+  width: 130px;
+  height: 60px;
+}
+.div_expiration div {
+  display: flex;
+}
+.div_expiration_one,.div_expiration_two{
+  font-size: 16px;
+}
+
+.div_holder {
+  color: white;
+  width: 230px;
+  height: 60px;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+.div_holder_one {
+  font-size: 16px;
+}
+
+/* back================================= */
+.back {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  transform: rotateY(180deg);
+  position: absolute;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+.back img{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.div_ccv span {
+  font-size: 18px;
+  position: absolute;
+  top: 110px;
+  right: 25px;
+  color: white;
+}
+.div_ccv_magnet {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  top: 40px;
+  background-color: black;
+}
+.div_ccv_one {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  padding: 5px;
+  right: 25px;
+  bottom: 100px;
+  width: 350px;
+  height: 45px;
+  background: white;
+  border-radius: 8px;
+  color: black;
+}
+/* form============================= */
+label{
+  width: 98%;
+  margin: 1%;
+}
+form{
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.number_one,.number_two,.number_three,.number_four{
+  width: 23%;
+  margin: 1%;
+  padding: 10px;
+  border-radius: 8px;
+}
+.holder{
+  width: 98%;
+  margin: 1%;
+  padding: 10px;
+  border-radius: 8px;
+}
+.expiration_one,.expiration_two{
+  width: 23%;
+  margin: 1%;
+  padding: 10px;
+  border-radius: 8px;
+}
+.ccv{
+  margin: 1%;
+  margin-left: 25%;
+  width: 23%;
+  padding: 10px;
+  border-radius: 8px;
+}
+.ccv_label{
+  width: 48%;
+  text-align: right;
+}
+.expiration_label{
+  width: 48%;
+}
+
+.btn{
+  font-size: 16px;
+  color: white;
+  width: 98%;
+  margin: 1%;
+  padding: 20px;
+  border-radius: 8px;
+  background: #005f73;
+}

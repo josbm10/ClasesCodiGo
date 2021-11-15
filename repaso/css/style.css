@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+div {
+  padding: 15px;
+}
+
+button {
+  border: none;
+  background: rgb(255, 103, 113);
+  color: #fff;
+  padding: 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input {
+  padding: 15px;
+  border-radius: 8px;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+}

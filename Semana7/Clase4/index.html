@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- replacechild----------- -->
+  <!-- <button>remplazar</button>
+  <div class="container">
+    <h2>remplazar</h2>
+  </div>
+  <script>
+    const h1=document.createElement("h1");
+    h1.innerHTML="hola mundo remplazado"
+    const container=document.querySelector(".container")
+    const h2=document.querySelector("h2")
+    const button=document.querySelector("button")
+
+    button.onclick=function(){
+      container.replaceChild(h1,h2);
+    }
+  </script> -->
+
+
+  <!-- clonenode ------------------ -->
+  <!-- <div>
+    <p>hola</p>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+    </ul>
+  </div>
+<script>
+  const div=document.querySelector("div");
+  div.onclick=function(){
+    alert("hola");
+  }
+  const clone=div.cloneNode(true)
+  document.querySelector("body").appendChild(clone)
+</script> -->
+
+<!-- inserbefore -->
+<!-- <button>inser</button>
+<div class="container">
+  <h2>hola mundo</h2>
+</div>
+<script>
+  const h1=document.createElement("h1");
+  h1.innerHTML="hola mundo insertado"
+  const h2=document.querySelector("h2");
+  const button=document.querySelector("button");
+  const container=document.querySelector(".container");
+
+  button.onclick=function(){
+    // container.insertBefore(h1,h2)
+    container.insertBefore(h1,h2.nextSibling)
+  }
+</script> -->
+<script type="module" src="./es6.js"></script>
+</body>
+</html>

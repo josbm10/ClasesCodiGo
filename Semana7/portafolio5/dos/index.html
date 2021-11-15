@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 500px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .container label {
+      width: 200px;
+      margin: 10px;
+      font-family: Arial;
+      font-size: 24px;
+      font-weight: 700;
+      text-align: left;
+      color: #B47AEA;
+    }
+
+    .container button {
+      width: 30px;
+      margin: 10px;
+      height: 30px;
+      border-radius: 100%;
+      background: #B47AEA;
+      color: white;
+      cursor: pointer;
+    }
+
+    .container input {
+      width: 98%;
+      margin: 1%;
+      height: 50px;
+      font-size: 24px;
+    }
+
+    .listas {
+      display: flex;
+      align-items: center;
+      margin: 10px;
+    }
+
+    .listas label {
+      margin: 10px;
+      font-family: Arial;
+      font-size: 24px;
+      text-align: left;
+    }
+    .listas input{
+      margin: 10px;
+      width: 30px;
+      height: 30px;
+    }
+    .listas button{
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <input type="text" required>
+    <button id="add">+</button>
+    <label for="add">Add new task</label>
+  </div>
+  <div class="app"></div>
+  <script>
+    const button = document.querySelector("#add");
+    const input = document.querySelector("input");
+    const app = document.querySelector(".app");
+    button.onclick = function () {
+      const article = document.createElement('article');
+      article.innerHTML = `
+      <button><img src="./image/Frame.png" alt=""></button>
+      <input type="checkbox" name="a" id="" >
+      <label for="a">${input.value}</label>
+      `
+      app.appendChild(article)
+      article.classList.add("listas")
+      article.querySelector('button').onclick = function () {
+        const flag = confirm('Estas seguro de eliminar esta tarea:');
+        if (flag) app.removeChild(article)
+      }
+
+      article.querySelector('input').addEventListener('click', function () {
+        if (article.querySelector('input').checked) {
+          article.querySelector('label').style.textDecorationLine = " line-through";
+        } else {
+          article.querySelector('label').style.textDecorationLine = "none";
+        }
+      })
+
+
+    }
+
+  </script>
+
+</body>
+
+</html>

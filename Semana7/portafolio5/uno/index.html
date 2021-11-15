@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+
+</head>
+
+<body>
+  <div class="container">
+  <div class="card">
+    <div class="front">
+      <div class="div_img_sim"><img src="image/sim-card.png" alt=""></div>
+      <div class="div_img_visa"><img src="./image/visa.png" alt=""></div>
+      <div class="div_number">
+        <h2 class="div_number_one"></h2>
+        <h2 class="div_number_two"></h2>
+        <h2 class="div_number_three"></h2>
+        <h2 class="div_number_four"></h2>
+      </div>
+      <div class="div_holder">
+        <span>Card Holder</span>
+        <h2 class="div_holder_one"></h2>
+      </div>
+      <div class="div_expiration">
+        <span>Expire</span>
+        <div>
+          <h2 class="div_expiration_one"></h2><span></span>
+          <h2 class="div_expiration_two"></h2>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="back">
+      <img src="./image/visa.png" alt="">
+      <div class="div_ccv">
+        <div class="div_ccv_magnet"></div>
+        <span>ccv</span>
+        <h2 class="div_ccv_one"></h2>
+      </div>
+    </div>
+  </div>
+  <form action="">
+    <label for="number_one">Card Number</label>
+    <input class="number_one" type="text" maxlength="4" id="number_one" required>
+    <input class="number_two" type="text" maxlength="4" required>
+    <input class="number_three" type="text" maxlength="4" required>
+    <input class="number_four" type="text" maxlength="4" required>
+
+
+    <label for="holder">Card Holder</label>
+    <input class="holder" type="text" id="holder" required>
+    <label for="expiration1" class="expiration_label">Expiration Date</label>
+    <label for="ccv" class="ccv_label">CCV</label>
+    <select class="expiration_one" name="" id="expiration_one" required>
+      <option value="" selected></option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+    <select class="expiration_two" name="" id="" required>
+      <option value="" selected></option>
+      <option value="2016">2016</option>
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+      <option value="2024">2024</option>
+      <option value="2025">2025</option>
+    </select>
+
+    <input class="ccv" type="text" id="ccv" maxlength="3" onfocus="myFunction(this)" onblur="myFunction()" required>
+    <button class="btn">Submit</button>
+
+  </form>
+</div>
+  <script src="./main.js">
+  </script>
+</body>
+
+</html>
