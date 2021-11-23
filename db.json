@@ -1,0 +1,45 @@
+{
+  "alumnos": [
+    {
+      "name": "leonel",
+      "lastname": "leonel",
+      "age": "34",
+      "id": 1
+    },
+    {
+      "name": "leonel ",
+      "lastname": "omo",
+      "age": "45",
+      "id": 2
+    },
+    {
+      "name": "leonel",
+      "lastname": "vasco",
+      "age": "132",
+      "id": 3
+    }
+  ],
+  "profesor": [
+    {
+      "id": 1,
+      "name": "adrea",
+      "lastname": "mendes",
+      "age": 26
+    },
+    {
+      "id": 2
+    },
+    {
+      "name": "as",
+      "lastname": "as",
+      "age": "23",
+      "id": 3
+    },
+    {
+      "name": "lucas",
+      "lastname": "milos",
+      "age": "25",
+      "id": 4
+    }
+  ]
+}
